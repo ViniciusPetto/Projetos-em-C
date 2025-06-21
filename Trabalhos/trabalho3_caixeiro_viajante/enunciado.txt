@@ -1,0 +1,36 @@
+Contexto:
+
+Na charmosa cidade de Limeira, um antigo mistério desafia a paciência dos moradores: vazamentos de água estão pipocando por toda parte! Canos estourando, ruas alagadas e um único herói para resolver tudo: Toninho, o Encanador Apurado.
+
+Toninho começa todos os seus dias no Centro de Operações da Prefeitura, seu quartel-general. No Centro de Operações, ele recebe uma lista com todos os locais da cidade que estão com vazamento naquele dia. Seu desafio? Traçar o roteiro mais rápido possível, para visitar todos esses locais, começando e terminando no Centro de Operações da Prefeitura, sem desperdiçar tempo.
+
+Como a cidade é grande e o trânsito às vezes é complicado, ele precisa de um sistema inteligente que o ajude a escolher a melhor ordem para visitar os pontos com vazamento, sempre tentando gastar o menor tempo total de deslocamento. É aqui que você entra!
+
+O Problema:
+Você deve escrever um programa que ajude Toninho a planejar seu percurso diário. Você receberá:
+
+Número de locais com vazamento (N): representando quantos locais com vazamento Toninho precisa visitar naquele dia, sendo no máximo 5 locais por dia.
+
+Matriz de tempos de deslocamento (T): Uma matriz quadrada de tamanho (N+1) × (N+1), onde cada elemento T[i][j] representa o tempo de deslocamento entre dois pontos da cidade:
+O índice 0 representa o Centro de Operações da Prefeitura.
+Os índices de 1 a N representam todos locais com vazamento que devem ser obrigatoriamente visitados.
+
+T[i][j] representa o tempo de deslocamento do local i para o local j. Assuma que T[i][j] = T[j][i] (o tempo de deslocamento é o mesmo em ambos os sentidos) e T[i][i] = 0.
+
+Atenção: Todos os locais numerados de 1 a N na matriz T são pontos com vazamentos que precisam ser visitados exatamente uma vez!
+
+O objetivo:
+O seu programa deve determinar automaticamente:
+
+A sequência de visitas: uma lista dos índices dos locais visitados na ordem em que o encanador deve ir, iniciando e terminando no Centro de Operações (0), de forma que o tempo total de deslocamento seja o menor possível. Para resolver esse problema, você deve aplicar uma estratégia gulosa, buscando sempre a melhor escolha local (por exemplo, o local mais próximo ainda não visitado), esperando que isso leve a um bom resultado global. Caso queira entender melhor o que é um algoritmo guloso, leia Método Guloso.
+O tempo total de deslocamento: um inteiro representando o tempo total do trajeto de acordo com a sequência definida anteriormente.
+
+Exemplo de Entrada:
+2
+0 5 10
+5 0 3
+10 3 0
+
+Exemplo de Saída:
+0 -> 1 -> 2 -> 0
+18

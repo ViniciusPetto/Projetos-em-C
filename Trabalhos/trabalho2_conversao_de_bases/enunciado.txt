@@ -1,0 +1,26 @@
+Enunciado
+
+Um aluno ingressante do Curso de Matemática resolveu desenvolver uma nova notação para representação de números inteiros. Sua representação, chamada a princípio de "Tenho-Muito-Tempo-Livre" (TMTL), utiliza os mesmos dígitos da base decimal, ou seja, os dígitos 0 a 9.
+
+Para fazer a conversão da notação TMTL para decimal, é necessário fazer uma soma de k termos, sendo k o número de dígitos na representação TMTL do número. O valor do i-ésimo termo da soma, que está associado ao i-ésimo dígito ai da representação TMTL, é dado por ai × i!, onde i! é o fatorial de i. Por exemplo:
+
+719TMTL = 7 × 3! + 1 × 2! + 9 × 1! = 7 × 6 + 1 × 2 + 9 × 1 = 5310
+
+Como o aluno está começando seus estudos na teoria dos números, ele ainda não sabe exatamente quais as propriedades que um sistema numérico deve ter. No entanto, no momento ele precisa de uma ferramenta para fazer a conversão rápida de números na representação TMTL para decimal, e para isso decidiu convocar seus colegas dos cursos de Computação (vocês!).
+
+Para desenvolver esta ferramenta, você deverá escrever um programa que receba como entrada uma sequência de números positivos quaisquer, em representação TMTL (valor máximo 9999TMTL), e mostre em sua saída as representações decimais correspondentes. O usuário sinalizará o final da sequência de entrada fornecendo o valor -1.
+
+Exemplo 1 de execução:
+Entrada: 719
+Saída: 53
+
+Entrada: 15
+Saída: 7
+
+Entrada: -1
+
+Exemplo 2 de execução:
+Entrada: 15
+Saída: 7
+
+Entrada: -1
