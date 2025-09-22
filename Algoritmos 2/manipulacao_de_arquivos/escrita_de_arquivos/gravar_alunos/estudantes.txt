@@ -1,0 +1,5 @@
+Thais 18 10,00
+Pedro 15 9,50
+Jose 22 8,00
+Rodrigo 23 9,00
+Angela 30 9,00
