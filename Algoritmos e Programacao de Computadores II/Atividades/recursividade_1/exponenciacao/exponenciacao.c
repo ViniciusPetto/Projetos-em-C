@@ -8,7 +8,7 @@ int main() {
 	setlocale(LC_ALL, "portuguese");
 	int base, potencia;
 	
-	printf("Digite a base e a potência que deseja calcular:\n");
+	printf("Digite a base e a potÃªncia que deseja calcular:\n");
 	scanf("%d %d", &base, &potencia);
 	printf("%d", f_exponencial(base, potencia));
 	return 0;
@@ -19,6 +19,3 @@ int f_exponencial(int base, int potencia){
 	}
 	return base * f_exponencial(base, potencia - 1);
 }
-
-
-

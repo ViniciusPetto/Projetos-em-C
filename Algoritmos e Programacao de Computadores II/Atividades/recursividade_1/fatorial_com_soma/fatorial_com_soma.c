@@ -14,12 +14,10 @@ int main(){
 	int n;
 	scanf("%d", &n);
 	if(n < 0){
-		printf("Digite um número maior que 0!\n");
+		printf("Digite um nÃºmero maior que 0!\n");
 	}
 	else{
 		printf("%d", fatorial_soma(n));
 	}
 	return 0;
 }
-
-
